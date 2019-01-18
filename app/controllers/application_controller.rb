@@ -22,6 +22,7 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
     erb :error if !session.keys.include? 'user_id'
+    erb :account
 end
 
   get '/logout' do
